@@ -5,6 +5,7 @@ deve apresentar o valor total acumulado da área residencial. */
 
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main () {
 	
@@ -17,6 +18,8 @@ int main () {
 	
 	printf("\nInforme o numero do comodo: \n\n1 - Sala \n2 - Cozinha \n3 - Banheiro \n4 - Quarto \n5 - Quintal \n6 - FIM\n\n");
 	scanf("%d", &comodo);
+	
+	system("cls");
 	
 	if (comodo == 6){
 		printf("\nAte a proxima!\n");
@@ -79,6 +82,8 @@ int main () {
 		
 		printf("\nInforme o numero do comodo: \n\n1 - Sala \n2 - Cozinha \n3 - Banheiro \n4 - Quarto \n5 - Quintal \n6 - FIM\n\n");
 		scanf("%d", &comodo);
+		
+		system("cls");
 		
 	} while (comodo != 6);
 	

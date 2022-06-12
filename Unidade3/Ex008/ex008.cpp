@@ -14,9 +14,11 @@ int main(){
 	int i = 0;
 	peso = 0;
 	
+	idade = 0;
 	
 	printf("Por favor, informe a idade da pessoa 1: ");
 	scanf("%d", &idade);
+	fflush(stdin);
 	
 	totalIdade = idade;
 	
