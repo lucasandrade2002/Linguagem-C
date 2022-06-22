@@ -18,6 +18,7 @@ int main () {
 	
 	struct dados contatos[30];
 	int i, opcao;
+	int count;
 	
 	setlocale(LC_ALL,"Portuguese");
 
@@ -28,6 +29,7 @@ int main () {
 	fflush(stdin);
 	
 	i = 0;
+	count = 0;
 	
 	system("cls");
 	
@@ -49,6 +51,8 @@ int main () {
 			scanf("%d", &opcao);
 			fflush(stdin);
 			
+			count++;
+			
 			if(opcao == 4){
 				printf("\nOk. Seu contato(s) já está salvo!");
 				printf("\n\nDeseja imprimir os seus contatos? (2-Sim/4-Não) ");
@@ -63,7 +67,7 @@ int main () {
 		if (opcao == 2){
 		printf("\nSegue abaixo uma lista com os seus contatos cadastrados:");
 		
-		for (i=0;i<30;i++){
+		for (i=0;i<count;i++){
 			printf("\n\nNome do contato %d: %s \nTelefone do contato %d: %s \nE-mail do contato %d: %s ", i+1, contatos[i].nome, i+1, contatos[i].telefone, i+1, contatos[i].email);			
 		}
 		} else if (opcao == 3){
